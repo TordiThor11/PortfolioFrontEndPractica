@@ -6,20 +6,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mi pagina web</title>
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+	<link rel="canonical" href="https://getbootstrap.com/docs/5.2/examples/headers/">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 </head>
 <body>
-	<header>
-		<h1>#YoProgramo</h1>
-		<img src="arg-programa.png" alt="Logo de argentina programa"> <!--Para la parte izquierda se pide el logo y nombre del programa y un banner personal -->
-		<img src="webmaker.png" alt="Mi banner">
-		<nav><!--Para la parte derecha pide mis redes sociales y un boton para el login-->
-			<ul>
-				<li><a href="https://www.instagram.com/valentin_tordi/" target="_blank">Mi instagram</a></li> 
-				<li><a href="login.html">Loguearse</a></li>
-			</ul>
-		</nav>
-	</header>
+	<div class="container">
+		<header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
+		  <a href="https://www.argentina.gob.ar/produccion/argentina-programa/segunda-etapa" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
+			<svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"/></svg>
+			<span class="fs-4">
+				<img src="arg-programa.png" alt="Logo de argentina programa" width="50%">
+				<h4>#YoProgramo</h4>
+			</span>
+		  </a>
+	
+		  <ul class="nav nav-pills">
+			<!--<li class="nav-item"><a href="#" class="nav-link active" aria-current="page">Home</a></li>-->
+			<!--<li class="nav-item"><a href="#" class="nav-link">Features</a></li>-->
+			<!--<li class="nav-item"><a href="#" class="nav-link">Pricing</a></li>-->
+			<li class="nav-item"><a href="https://www.instagram.com/valentin_tordi/" class="nav-link"> Mi Instagram</a></li>
+			<li class="nav-item"><a href="login.html" class="nav-link active">Login</a></li>
+		  </ul>
+		</header>
+		<div class="col"><img src="webmaker.png" class="img-fluid" alt="Mi banner" width="100%"></div>
+	</div>
     <h3>Sobre mi</h3>
 	<img src="mi foto.jpg" alt="Foto mia" id="miFoto"  width="200px">
 	<p>Me llamo Valentin Tordi y soy Full Stack Developer Jr. Tambien cuento con un nivel de ingles medio</p>
